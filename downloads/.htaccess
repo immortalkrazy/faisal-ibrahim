@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Enter Credentials Please"
+AuthUserFile /var/www/private_access_credentials/.htpswd
+Require valid-user

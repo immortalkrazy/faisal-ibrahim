@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            faisal ibrahim project
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0%;
+            }
+            #map {
+                height: 250px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            "NEW YORK TIMES" COVID-19 DATA
+        </h1>
+        <div id = "map"></div>
+        <section id = "container">
+            <a href="/html-templates/state36.html"><button id = "NY"> NEW YORK </button></a>
+            <a href="/html-templates/state06.html"><button id = "CA"> CALIFORNIA </button></a>
+            <a href="/html-templates/state12.html"><button id = "FL"> FLORIDA </button></a>
+            <a href="/html-templates/state48.html"><button id = "TX"> TEXAS </button></a>
+            <a href="/html-templates/state53.html"><button id = "WA"> WASHINGTON </button></a>
+            <a href="/html-templates/state34.html"><button id = "NJ"> NEW JERSEY </button></a>
+            <a href="/html-templates/state09.html"><button id = "CT"> CONNECTICUT </button></a>
+        </section>
+        <p>
+            This is based on data cloned from   "New York Times"
+            <br>Covid-19 Git repository and updated every few hours.
+        </p>
+        <script>
+            function initMap() {
+                var location = {lat: 40.712776, lng: -74.005974};
+                var map = new google.maps.Map(document.getElementById("map"),{
+                    zoom: 4,
+                    center: location                    
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-h83erDicbDkm6HdEY8HIt1ji1nnnDIY&callback=initMap">
+        </script>
+        <script type="text/javascript" src="/js/app.js"></script>
+    </body>
+</html>

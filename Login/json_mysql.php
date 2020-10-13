@@ -11,7 +11,7 @@
     foreach($array as $row)
     {
         $sql = "INSERT INTO employee (name, gender, designation) VALUES('".$row["name"]."', '".$row["gender"]."', '".$row["designation"].")";
-        mysqli_quesry($connect, $sql);
+        mysqli_query($connect, $sql);
     }
     echo "Employee Data Inserted";
 

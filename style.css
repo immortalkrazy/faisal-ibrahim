@@ -12,7 +12,8 @@ body{
     margin-top: 50px;
     margin-left: 50px;
 }
-.button {
+.button {  
+  width: 100px;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -55,5 +56,15 @@ body{
 
 .button3:hover {
   background-color: #ba2e00;
+  color: white;
+}
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4B0082;
+}
+
+.button4:hover {
+  background-color: #4B0082;
   color: white;
 }

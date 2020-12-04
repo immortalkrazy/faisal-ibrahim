@@ -1,2 +1,4 @@
 .vscode
-downloads/ppt.pptx
+downloads/
+!downloads/download.html
+
